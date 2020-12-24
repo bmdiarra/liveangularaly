@@ -1,0 +1,42 @@
+<h3> Mes Reservations </h3>
+<hr>
+
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Actions</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>
+            <a class="btn btn-sm btn-outline-info mr-2" [routerLink]="['/reservations', 1]">Detail</a>
+            <a class="btn btn-sm btn-outline-warning" [routerLink]="[1,'edit']">Edit</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>
+            <a class="btn btn-sm btn-outline-info mr-2" [routerLink]="['/reservations', 2]">Detail</a>
+            <a class="btn btn-sm btn-outline-warning" [routerLink]="[2,'edit']">Edit</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>
+            <a class="btn btn-sm btn-outline-info mr-2" [routerLink]="['/reservations', 3]">Detail</a>
+            <a class="btn btn-sm btn-outline-warning" [routerLink]="[3,'edit']">Edit</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <router-outlet></router-outlet>

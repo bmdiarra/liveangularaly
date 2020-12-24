@@ -1,0 +1,14 @@
+<div class="card text-center" style="width: 18rem;">
+    <img src="{{ itembien.image }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> {{ itembien.title }} </h5>
+      <p class="card-text"> {{ itembien.description | summarize: 50 }}</p>
+      <span class="float-left btn "></span>
+      <!-- <a href="#" class="btn btn-primary">Super prix {{ this.u.numberSeparator(this.itembien.price, '.')}}</a> -->
+      <a href="#" class="btn btn-primary">Super prix {{ this.itembien.price | separator: '.'}}</a>
+      <br/>
+      <a href="#" class="btn">Date: {{ this.itembien.createAt | timeleft}}</a>
+      <br/>
+      <a class="btn btn-primary" >Reserver</a>
+    </div>
+  </div>
